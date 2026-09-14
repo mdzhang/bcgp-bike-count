@@ -1,6 +1,65 @@
 # Bike Counts
 
-## Instructions
+Mobile-friendly web app for bike count volunteering.
+
+**Live site:** [mdzhang.github.io/bcgp-bike-count](https://mdzhang.github.io/bcgp-bike-count/)
+
+## Development
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) 20+ (22 recommended)
+- npm 10+
+
+### Setup
+
+```bash
+git clone https://github.com/mdzhang/bcgp-bike-count.git
+cd bcgp-bike-count
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173). The dev server uses `/` as the base path.
+
+### Build
+
+```bash
+npm run build
+```
+
+Output goes to `dist/`. Production builds use `/bcgp-bike-count/` as the base path for GitHub Pages.
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+Open [http://localhost:4173/bcgp-bike-count/](http://localhost:4173/bcgp-bike-count/) to verify the GitHub Pages path locally.
+
+### Lint
+
+```bash
+npm run lint        # check
+npm run lint:fix    # auto-fix
+```
+
+## CI
+
+Pull requests run [lint/format and build checks](.github/workflows/ci.yml) via GitHub Actions.
+
+## Deployment
+
+Pushes to `main` deploy automatically via [GitHub Actions](.github/workflows/deploy.yml).
+The site is served at `https://mdzhang.github.io/bcgp-bike-count/`.
+
+## Counter instructions
 
 - counts are divided into 15m sessions
 - cyclists are

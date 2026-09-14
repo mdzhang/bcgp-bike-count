@@ -1,0 +1,39 @@
+{
+  "name": "bcgp-bike-count",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --base /bcgp-bike-count/",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "TZ=America/New_York vitest run",
+    "test:watch": "TZ=America/New_York vitest"
+  },
+  "dependencies": {
+    "@radix-ui/react-popover": "^1.1.6",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.474.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@tailwindcss/vite": "^4.0.6",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/lodash": "^4.17.15",
+    "@types/node": "^26.5.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "happy-dom": "^20.14.5",
+    "tailwindcss": "^4.0.6",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vitest": "^4.1.11"
+  }
+}

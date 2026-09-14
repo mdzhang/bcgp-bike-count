@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bcgp: #d3623d;
+  --color-accent: #059669;
+  --color-surface: #fafafa;
+  --color-muted: #737373;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply bg-surface text-neutral-900 antialiased;
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100dvh;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+@keyframes sheet-slide-up {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes sheet-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
